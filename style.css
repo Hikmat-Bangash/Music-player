@@ -1,0 +1,138 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.music_container{
+    width: 20rem;
+    height: 32rem;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px red;
+    border: 2px solid red;
+    backdrop-filter: blur(50rem);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 8px;
+    word-spacing: 6px;
+    font-weight: 900;
+    font-size: 26px;
+    font-style: italic;
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(153, 135, 153);
+    transition: 0.4s;
+    text-shadow: 2px 3px 2px white;
+    animation: colors 4s infinite linear alternate;
+    /* border: 2px solid red; */
+}
+h3{
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 6px;
+    word-spacing: 4px;
+    font-weight: 900;
+    font-size: 26px;
+    font-style: italic;
+    color: thistle;
+}
+.image{
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+    margin-top: 25px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid red;
+  border-image-slice: 1px;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); */
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+}
+.enimate{
+    animation: rotation 14s infinite linear;
+}
+
+.icons{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5rem;
+} 
+.icons button{
+  background-color: rgb(24, 24, 204);
+  width: 40px;
+  height: 38px;
+  font-size: 14px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+button:focus{
+    outline: none;          
+}
+audio{
+    display: none;
+}
+#next,
+#prev{          
+    font-weight: bolder;
+}
+.icons button:hover{
+    background-color: green;
+}
+marquee{
+    margin-top: 40px;
+    display: none;
+}
+
+@keyframes rotation {
+     from{
+         transform: rotate(0deg);
+     }
+     to{
+         transform: rotate(360deg);
+     }
+}
+@keyframes colors {
+     0%{
+         color: white;
+         transition: 0.4s;
+         letter-spacing: 9px;
+     }
+    
+     25%{
+         color: rgb(37, 228, 228);
+         transition: 0.4s;
+         letter-spacing: 11px;
+     }
+     50%{
+         color: red;
+         transition: 0.4s;
+         letter-spacing: 13px;
+     }
+     75%{
+         color: yellow;
+         transition: 0.4s;
+         letter-spacing: 15px;
+     }
+     100%{
+         color:  rgb(255, 111, 248);
+         transition: 0.4s;
+         letter-spacing: 17px;
+     }
+}

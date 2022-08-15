@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER </title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\FontAwesome\fontawesome-free-5.15.1-web\css\all.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>    
+
+    <div class="main">
+       
+        <div class="music_container">
+            <h2 id="artist"> BANGASH</h2>
+            <h3  id="title"> Tum Q chale </h3>
+            <!-- adding images -->
+            <div class="image">
+                <img src="assets/music.jpg" alt="image"/>
+            </div>
+    <!-- music selection -->
+    <audio src="assets/music.mp3" controls></audio>
+
+            <div class="icons">
+             <button id="prev"> << </button>  
+             <button id="play"> play</button>
+             <button id="next"> >> </button>
+            </div>
+    <!-- adding marquee -->
+    <marquee behavior="scroll" scrollamount="4" direction="right"  width="100%" id="slideShow" >
+        <h4 style=" color: rgb(181, 181, 199);"> HIKMAT BANGASH </h4>
+     </marquee>     
+        </div>
+    </div>
+
+
+<!-- JAVASCRIPT SECTION -->
+<script src="script.js"></script>
+
+
+</body>
+</html>
