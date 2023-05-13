@@ -11,19 +11,19 @@ console.log(title.textContent);
 let songs = [
        {
            name : "music",
-           artist : "BANGASH",
+           artist : "Arman khan",
            title : "Tum Q Chale",
        },
 
        {
            name : "music3",
-           artist : "BANGASH",
+           artist : "Arjid sing",
            title : "Dekh Lena ♥",
        },
     
        {
            name : "music7",
-           artist : "BANGASH",
+           artist : "Anonymous",
            title : "Sachi Na kr 😊",
        }
       
